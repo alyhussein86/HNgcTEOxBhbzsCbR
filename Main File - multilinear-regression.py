@@ -9,6 +9,6 @@ X = reader[['X1', 'X2', 'X3', 'X4', 'X5', 'X6']]
 regr = linear_model.LinearRegression()
 regr.fit(X, y)
 
-predicted = regr.predict([[1, 1, 1, 1, 1, 1]])
+predicted = regr.predict([[5, 4, 4, 4, 4, 5]])
 #  , 2, 1, 1, 5
-print(predicted*100)
+print("Satisfaction Percentage: ", predicted*100, "%")
